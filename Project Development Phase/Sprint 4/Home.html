@@ -1,0 +1,92 @@
+<html>
+    <head><title>Fire detection</title>
+        <style>
+            body{
+                background: linear-gradient(to bottom right,rgb(238, 238, 129),rgb(238, 108, 108),rgb(86, 228, 86));
+            }
+            td{
+                padding: 15px;
+                text-decoration: none;
+                
+            }
+            input{
+                border: none;
+              
+            }
+            div{
+                height: 20px;
+                width: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                background: linear-gradient(to bottom right,rgb(99, 236, 99),rgb(230, 96, 96));
+                color:white;
+                text-shadow: 0 0 3px #FFFFFF;
+            }
+            .box{
+                position:relative;
+                background-color:rgb(255, 255, 255);
+                height:600px;
+                width:800px;
+                padding: 30px;
+                margin-left: 200px;
+                margin-top:100px;
+
+            }
+            .box h1{
+                margin-left: 150px;
+            }
+            .img{
+                position:absolute;
+                margin-left:250px;
+                height:300px;
+                width:300px;
+                background:white;
+                border: 2px solid black; 
+            }
+            .alert{
+                display:none;
+            }
+            </style>
+        </head>
+        <body>
+            <div class="box">
+                <h1>FOREST FIRE DETECTOR</h1>
+                <form action="" method="">
+                    <table>
+                        <tr>
+                          <!--  <td>
+                    IMAGE</td> -->
+                    <!--- <td>
+                    <input type="file" name="video" placeholde="browse your video">
+                    </td> --->
+                <!---<td>
+                    VIDEO
+                 </td> --->
+                 <td>
+                    <input type="file" name="img" placeholder="browse your image" >
+                    
+                 </td> 
+                    </tr>
+                    <br>
+                    <br>
+                    <br>
+                    <tr>
+                        <td>
+                            <div class="alert">ALERT</div>
+                        <td>
+                           <!-- <div class="img"></div> -->
+                    <input type="button" onclick="fire();" value="submit"></td>
+                    <td>
+                </table>    
+                </form>
+            </div>
+            <script>
+                function fire()
+                {
+                    alert("FIRE DETECTOR");
+                    alert("Image sent successfully");
+                }
+                </script>
+
+        </body>
+</html>
